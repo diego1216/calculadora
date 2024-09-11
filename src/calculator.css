@@ -1,0 +1,105 @@
+/* Estilo general para el contenedor de la calculadora */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #252121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .calculator-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    width: 100%;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 22px;
+    color: #444;
+    margin-bottom: 15px;
+  }
+  
+  /* Estilo para la selección de la dimensión */
+  form label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 18px;
+  }
+  
+  /* Estilo para las matrices (inputs) */
+  .matrix-input {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+    margin-bottom: 18px;
+  }
+  
+  input[type="number"] {
+    width: 100%;
+    padding: 6px; /* Ajuste del tamaño */
+    font-size: 14px; /* Tamaño de texto más pequeño */
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.2s;
+  }
+  
+  input[type="number"]:focus {
+    border-color: #666;
+    outline: none;
+  }
+  
+  /* Estilo para los botones de operaciones */
+  button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 16px;
+    color: white;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  /* Estilo del resultado */
+  .result {
+    margin-top: 18px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  /* Alineación del error */
+  .error {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 8px;
+  }
+  
